@@ -15,5 +15,13 @@
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valensartorelli/grupo_4_WeByte_Sprint2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/valensartorelli/grupo_4_WeByte_Sprint2/issues"
+  },
+  "homepage": "https://github.com/valensartorelli/grupo_4_WeByte_Sprint2#readme",
   "description": ""
 }
