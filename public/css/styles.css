@@ -6,23 +6,25 @@
 
 html, 
 body {
-    height: 100%;
-  }
+  height: 100%;
+}
 
 body {
-    background-color: #ffffff;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
+  background-color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 img{
   width: 100%;
 }
+
 a {
   text-decoration: none; 
   color: #222222;
 }
+
 a:hover {
   text-decoration: none; 
   color:#e4ff49;
@@ -32,12 +34,14 @@ header {
   background-color: #ffffff;
   display: block;
 }
+
 .copy-header {
   font-size: 10px; 
   color: #e4ff49;  
   display: block; 
-  width: 60vw; 
+  width: 35vw; 
 }
+
 .header-top-bar {
   width: 100%; 
   display: flex; 
@@ -51,32 +55,36 @@ header {
 }
 
 .burguer-menu{
-    color: #000000;
-    display: block;
-    max-width: 40px;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
-    margin: auto;
-    padding-right: 25px;
-    flex: 1 1 auto;
+  color: #000000;
+  display: block;
+  max-width: 40px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  padding-right: 25px;
+  flex: 1 1 auto;
 }
+
 .header-logo {
   flex: 8 1 auto; 
   margin: auto; 
   display: block; 
   text-align: center;
 }
+
 .header-logo-desk {
   text-align: left; 
   padding-top: 3px; 
   width: 250px
 }
+
 .logo {
-  width: 20vW;
+  width: 25vW;
 }
+
 .logo-xs {
-  width: 60px;
+  width: 105px;
 }
 
 .header-top-bar nav{
@@ -85,6 +93,7 @@ header {
   display: block; 
   flex: 1 1 auto;  
 }
+
 .main-navbar ul {
   list-style: none; 
   margin: 0; 
@@ -109,7 +118,7 @@ header {
   color:#e4ff49;
 }
 
-.header-top-bar-destock {
+.header-top-bar-desktop {
   display: flex; 
   justify-content: space-between; 
   flex-wrap: nowrap;  
@@ -120,7 +129,7 @@ header {
   height: 50px; 
 }
 
-.header-top-bar-destock nav {
+.header-top-bar-desktop nav {
   font-weight: 400; 
   text-align: left; 
   flex: 2 1 auto;  
@@ -152,12 +161,12 @@ header {
 }
 
 .color-top{
-    background-color: #363739;
-    width: 100%;
-    border-bottom: 4px #e4ff49 solid ;
-    color: white;
-    align-items: center;
-    padding: 0 15px;
+  background-color: #363739;
+  width: 100%;
+  border-bottom: 4px #e4ff49 solid ;
+  color: white;
+  align-items: center;
+  padding: 0 15px;
 }
 .color-top .container {
   justify-content: space-between;
@@ -205,16 +214,17 @@ footer section .lgrey{
 }
 
 .color-bottom{
-    background-color: #363739;
-    width: 100%;
-    margin: auto;
-    color: #ffffff;
-    font-size: 12px;
-    padding: 22px 0;
+  background-color: #363739;
+  width: 100%;
+  margin: auto;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 22px 0;
 }
 
 .color-bottom .d-flex{
   justify-content: space-between;
+  flex-direction: column;
 }
 
 footer p{
@@ -250,6 +260,10 @@ footer p{
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.main-navbar-bottom ul li:first-of-type a {
+  padding-left: 0;
 }
 
 .main-navbar-bottom ul a:hover {
@@ -391,34 +405,84 @@ footer p{
 }
 /* end burguer*/
 
+
+
+/* Estilos Responsive */
+
 @media (max-width: 767px){
-    .header-top-bar-destock {
+    .header-top-bar-desktop {
       display: none;
     }  
 }
+
+/* XS -- Celulares */
+@media screen and (min-width: 0px) {
+  .logo-footer{
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 25vW;
+  }
+}
+
+/* SM -- tablets */
+@media screen and (min-width: 361px) {
+  .logo {
+    width: 20vW;
+  }
+  .copy-header {
+    width: 45vw;
+  }
+  .color-bottom .d-flex {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  footer p {
+    margin: 5px 0;
+  }
+}
+
+/* MD -- Laptops */
 @media (min-width: 768px){
     .header-top-bar{
       display: none;
     }
-    .header-top-bar-destock {
-      display: flex;
+    .header-top-bar-desktop .d-flex{
+      align-items: center;
     } 
+    .copy-header {
+      width: 60vw;
+    }
+    .color-bottom .d-flex{
+      flex-direction: row;
+    }
+    .logo-footer{
+      display: inline-block;
+    }
+    .main-navbar-bottom{
+      display: inline-block;
+      margin-left: 20px;
+    }
 }
 
+/* LG -- Computadoras */
 @media (min-width: 1200px) {
     .header-top-bar{
       display: none;
     }
-    .header-top-bar-destock .container{
+    .header-top-bar-desktop .container{
       justify-content: space-between;
       align-items: center;
     }
     .header-top-bar, 
     .main-navbar-bottom, 
     .main-navbar-social, 
-    .header-top-bar-destock, 
+    .header-top-bar-desktop, 
     main {
         margin: auto;
+    }
+    .copy-header {
+      width: 60vw;
     }
     .burguer-menu{
       display: none;
@@ -440,5 +504,15 @@ footer p{
     }
     .main-navbar-bottom ul li:first-of-type a {
       padding-left: 0;
+    }
+    .color-bottom .d-flex{
+      flex-direction: row;
+    }
+    .logo-footer{
+      display: inline-block;
+    }
+    .main-navbar-bottom{
+      display: inline-block;
+      margin-left: 20px;
     }
 }
