@@ -27,7 +27,7 @@ a {
 
 a:hover {
   text-decoration: none; 
-  color:#e4ff49;
+  color:#aff343;
 }
 
 header {
@@ -115,7 +115,7 @@ header {
 }
 .main-navbar ul a:hover {
   text-decoration: none; 
-  color:#e4ff49;
+  color:#aff343;
 }
 
 .header-top-bar-desktop {
@@ -157,7 +157,7 @@ header {
 
 .main-navbar-left ul a:hover {
   text-decoration: none; 
-  color:#e4ff49;
+  color:#aff343;
 }
 
 .color-top{
@@ -181,7 +181,8 @@ header {
   margin: 0; 
   padding: 0; 
   display: flex; 
-  justify-content: flex-end;  
+  justify-content: flex-end;
+  white-space: nowrap;  
 }
 .color-top nav ul a {
   text-decoration: none; 
@@ -197,7 +198,7 @@ header {
 }
 .color-top nav ul a:hover {
   text-decoration: none; 
-  color:#e4ff49;
+  color:#aff343;
 }
 
 footer {
@@ -268,7 +269,7 @@ footer p{
 
 .main-navbar-bottom ul a:hover {
   text-decoration: none; 
-  color:#e4ff49;
+  color:#aff343;
 }
 
 .main-navbar-social ul {
@@ -300,7 +301,7 @@ footer p{
 
 .main-navbar-social ul a:hover {
   text-decoration: none; 
-  color:#e4ff49;
+  color:#aff343;
 }
 
 /* cc burguer */
