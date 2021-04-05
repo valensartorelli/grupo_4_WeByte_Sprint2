@@ -1,0 +1,83 @@
+    .form_login {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+        border: 1px solid black;
+        background-color: #ebebeb;
+        border-radius: 1em;
+    }
+    
+    .form_login label {
+        position: absolute;
+        width: 300px;
+        top: 10px;
+        left: 20px
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    .fl_email input {
+        position: absolute;
+        width: 300px;
+        top: 90px;
+        left: 20px;
+    }
+    
+    .fl_password input {
+        position: absolute;
+        width: 300px;
+        top: 150px;
+        left: 20px;
+    }
+    
+    .fl_password label {
+        position: absolute;
+        width: 300px;
+        top: 130px;
+        left: 20px;
+    }
+    
+    .fl_registro button {
+        position: absolute;
+        bottom: 70px;
+        left: 0px;
+        background-color: #000;
+        color: #ebebeb;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .fl_limpiar button {
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        background-color: rgb(155, 154, 154);
+        color: #ebebeb;
+        width: 100%;
+        font-size: 16px;
+        justify-content: center;
+    }
+    
+    .fl_email label {
+        position: absolute;
+        width: 300px;
+        top: 65px;
+        left: 20px;
+    }
+    
+    .fl_olvido label {
+        position: absolute;
+        width: 300px;
+        top: 180px;
+        left: 20px;
+    }
+    
+    .fl_noRegistrado {
+        position: absolute;
+        width: 300px;
+        top: 210px;
+        left: 20px;
+    }
