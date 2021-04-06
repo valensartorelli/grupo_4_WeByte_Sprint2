@@ -168,6 +168,8 @@ width: auto;
 #pd_main-producto h1{font-family: 'Roboto Condensed', sans-serif; font-size: 2.5em;}
 .pd_producto-img{color: #000; }
 .pd_prod-left, .pd_prod-rigt{flex: 1 1 50%;}
+.pd_prod-rigt3{flex: 1 1 30%; padding: 20px 30px;}
+.pd_prod-rigt3 h2{font-size: 1.5em;}
 .pd_prod-rigt{font-size: 0.75em; padding: 15px 10px;} 
 .pd_prod-rigt p{padding-right: 35px;} 
 .pd_prod-precio{font-weight: bold; font-size: 1.25em;}
