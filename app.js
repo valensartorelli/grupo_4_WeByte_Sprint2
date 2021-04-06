@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const puerto = process.env.PORT;
 const path = require('path');
 
 // le decimos cual es la carpeta publica
@@ -36,4 +36,7 @@ app.get('/plantilla', (req, res) =>
     res.sendFile(path.join(__dirname, './views/plantilla.html'))
 );
 
-app.listen(port, () => console.log("Esta saliendo por el puerto " + port))
+
+app.listen(puerto || 3000, function() {
+    console.log("Servidor corriendo en el puerto 3000");
+});

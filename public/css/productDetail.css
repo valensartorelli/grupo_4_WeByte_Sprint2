@@ -137,6 +137,9 @@ width: auto;
     background-repeat: no-repeat;
     background-position: right;
 }
+.pd_gl-cta__content a {color: #fff; text-decoration: none;}
+.pd_gl-cta__content a:hover {color: #e5fe4a; text-decoration: none;}
+
 .pd_gl-cta--primary:hover {color: #e5fe4a;}
 
 .pd_products{display: flex; justify-content: space-between; align-items: center;}

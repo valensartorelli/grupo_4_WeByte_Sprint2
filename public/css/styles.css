@@ -179,6 +179,7 @@ header {
 
 .color-top a {
     color: #ffffff;
+    white-space: nowrap
 }
 
 .color-top nav ul {
