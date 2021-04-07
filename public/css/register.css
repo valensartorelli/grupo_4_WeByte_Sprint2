@@ -25,13 +25,13 @@ input{
 input:focus{ outline: none;}
 
   .p40 {padding-top: 41px;}
-  .fr_text{display: block; width: 100%; font-family: 'Roboto Condensed', sans-serif; font-size: 1em; padding: 0px 10px;}
+  .fr_text{display: block; width: 100%; font-family: 'Roboto Condensed', sans-serif; font-size: 1em; padding: 0px 10px; }
   .fr_text a{text-decoration: none; color: #ff0000;}
   .fr_text a:hover {color: #ff0000;}
     
   .fr_nombre input, .fr_email input,  .fr_calle input,  .fr_fechaNac input,  .fr_password1 input, .fr_password2 input {
         width: 98%;
-        margin: 5px 0px;
+        margin: 0px 0px 5px 0px;
         padding: 0px 10px;
     }
     .fr_checkbox {
@@ -68,6 +68,8 @@ input:focus{ outline: none;}
 
     .fr-destacado{font-family: 'Roboto Condensed', sans-serif; font-size: 0.85em; color: #222222;}
     .m-left20 {margin-left: 20px;}
+    .fr_lbltexto{font-family: 'Roboto Condensed', sans-serif; font-size: 1em; color: #222222; text-transform: uppercase; padding-top: 15px; font-weight: 600;}
+    .fr_lbltexto-xs {font-family: 'Open Sans', sans-serif; font-size: 10px; color: #222222; }
 
     .p10 {padding: 10px;}
     

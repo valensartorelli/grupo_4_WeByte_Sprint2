@@ -104,26 +104,29 @@
                     <div class="pd_prod-left p10">            
                         <form action="" method="POST">
                                 <div class="fr_nombre">
+                                    <label class="fr_lbltexto"> Tu Nombre </label>
                                     <input type="text" name="nombreApellido" id="nombreApellido" required placeholder="* Nombre y Apellido">
                                 </div>
-                                <div class="fr_email">
-                                    <input type="email" name="emailUsuario" id="emailUsuario" required placeholder="* Correo Electronico">
-                                </div>
-                                <!-- INICIA RESTO DE DATOS PERSONALES Y CONTRASEÑA-->
                                     <div class="fr_fechaNac">
-                                        <label class="fr_lbltexto"> Tu Fecha Nacimiento </label>
+                                        <label class="fr_lbltexto"> Fecha de nacimiento </label>
                                         <input type="date" name="fechaNac" id="fechaNac" required>
                                     </div>
+                                    <div class="fr_email">
+                                        <label class="fr_lbltexto"> Datos de Acceso </label>
+                                        <input type="email" name="emailUsuario" id="emailUsuario" required placeholder="* Correo Electronico">
+                                    </div>
                                 <div class="fr_password1">
-                                    <label class="fr_lbltexto"> Ingresa y repite tu contaseña</label>
                                         <input type="password" name="passwordUsuario1" id="passwordUsuario1" required placeholder="* Contraseña">
+                                        <label class="fr_lbltexto-xs"> Debes usar como minimo 8 caracteres, incluyendo un numero, mayusculas y minusculas.</label>
                                 </div>
                                 <div class="fr_password2">
                                         <input type="password" name="passwordUsuario2" id="passwordUsuario2" required placeholder="* Repetir Contraseña">
                                 </div>
                                  <!--</div>-->
+                                 <br>
                         <div class="fr_checkbox">
-                            <input type="checkbox" name="terminos" id="a"> &nbsp;  He leído y acepto los Términos y condiciones de WeByte y la Política de privacidad
+                            <input type="checkbox" name="terminos" id="a"> &nbsp;
+                              He leído y acepto los Términos y condiciones de WeByte y la Política de privacidad
                         </div>
                         <div class="fr_checkbox">
                             <input type="checkbox" name="newsletter" id="b"> &nbsp; Quiero recibir newsletters y ofertas
