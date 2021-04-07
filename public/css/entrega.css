@@ -1,10 +1,16 @@
 label.fr_lbltexto{
     display: none;
 }
-div.fr_text, div.fr_registro{
+div.fr_text{
     margin-top: 3%;
     margin-bottom: 3%;
     padding-left: 2%;
+}
+div.fr_registro{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 2%;
+    justify-content: left;
 }
 div.pd_producto-img{
     width:90%;
@@ -81,6 +87,7 @@ button:hover {
 }
 section#formulario{
     margin-bottom: 5%;
+    justify-content: space-between;
 }
 
 @media (max-width: 360px) {
