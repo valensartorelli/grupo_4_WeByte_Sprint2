@@ -197,7 +197,7 @@ width: auto;
     .pd_text-news{font-size: 1.5em;}
     .pd_descripciones{ font-size: 1em;}
     .pd_precios{font-size: 1em; }
-    
+    .pd_prod-rigt3{border-top: 1px solid #333;}
   }
   
   /* SM -- tablets */
@@ -222,6 +222,7 @@ width: auto;
     .pd_lista-products{display: flex; flex-direction:row; justify-content: space-between; flex-wrap: wrap; width: 100%;}
     #pd_listado-products article{ width: 33%;}
     .pd_img-list{width: 95%;}
+    .pd_prod-rigt3{border-top: none;}
 
 }
 

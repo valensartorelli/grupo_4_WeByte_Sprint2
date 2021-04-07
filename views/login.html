@@ -111,7 +111,6 @@
                             <div class="accordion-body">
                                 <div class="pd_producto-img">
                                     <div class="pd_prod-left p10">  
-                                        <div class="pd_tit-categoria p40">Registrate</div>
                 <div class="fr_text">Ya estas registrado? Inicia Sesión aca</div>          
                                         <form action="" method="POST">
                                                     <div class="fr_email">
@@ -121,10 +120,10 @@
                                                         <input type="password" name="passwordUsuario1" id="passwordUsuario1" required placeholder="* Contraseña">
                                                         <label class="fr_lbltexto-xs"><a href="#"> Olvidaste contraseña?</a></label>
                                                 </div>
-
+                                                <br><br>
                                         <div class="fr_registro">
                                         <div class="fr_registro-left">
-                                            <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="/carrito">Registrarme</a></span></button>
+                                            <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="#">Iniciar Sesion</a></span></button>
                                         </div>
                                         <div class="fr_registro-right">
                                         <div class="google-logo"><a href="/carrito">Google</a></div>
@@ -133,12 +132,12 @@
                                 </div>
                                     </form></div>
                                     <div class="pd_prod-rigt3">
-                                        <h2>UNITE AL WEBYTE. <br>OBTENÉ BENEFICIOS</h2>
-                                            <p class="fr-destacado"> ✓ Disfrutá inmediatamente de todos los beneficios y descuentos</p>
-                                            <p class="fr-destacado"> ✓ Accedé a la venta de productos de edición limitada</p>
-                                            <p class="fr-destacado"> ✓ Recibí nuestras mejores ofertas y promociones</p>
-                                            <p class="fr-destacado"> ✓ Es hora de desbloquear lo mejor de WEBYTE.</p>
-                                    
+                                        <div class="pd_tit-categoria">Registrate para una mejor experiencia</div>
+                                        <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="/register">Registrate</a></span></button><br><br>
+                                        <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="/producto">Ingresa como invitado</a></span></button>
+                                            <p class="fr-destacado"> ✓ Registrate y ahorrá tiempo<br>
+                                             ✓ Compra de manera fácil y rápida<br>
+                                             ✓ Acceso fácil a tu historial de pedidos y tu status</p>                                   
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +151,45 @@
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <form action="" method="POST">
+                                    <div class="pd_producto-img block">
+                                        <div class="formEnvios">            
+                                                    <div class="form">
+                                                        <input type="text" name="nombreApellido" id="nombreApellido" required placeholder="* Nombre y Apellido">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="date" name="fechaNac" id="fechaNac" required>
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="email" name="emailUsuario" id="emailUsuario" required placeholder="* Correo Electronico">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="text" name="calle" id="calle" required placeholder="* Calle">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="text" name="numero" id="numero" required placeholder="* Numero">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="text" name="piso-dept" id="piso-dept" required placeholder="* Piso / Departamento">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="text" name="postal" id="postal" required placeholder="* Codigo Postal">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="text" name="provincia" id="provincia" required placeholder="* Provincia">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="text" name="localidad" id="localidad" required placeholder="* Localidad">
+                                                    </div>
+                                                    <div class="form">
+                                                        <input type="text" name="telefono" id="telefono" required placeholder="* Telefono">
+                                                    </div>
+                                    </div><br>
+                                    <div class="block">
+                                    <div class="doble-boton"><div class="boton-left"><button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="/login">Volver</a></span></button><br><br>
+                                        </div><div class="boton-right"><button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="#">Confirmar</a></span></button></div></div>
+                                    </div></div>
+                                </form>
                             </div>
                           </div>
                         </div>
@@ -164,7 +201,9 @@
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="block">
+                                    <div><label class="fr_lbltexto2" for="domicilio"><input type="radio" name="envio" id="domicilio" value="domicilio">Envio a Domicilio </label></div>
+                                    <div><label class="fr_lbltexto2" for="retiro"><input type="radio" name="envio" id="retiro" value="retiro">Retiro en Tienda </label></div>        
                             </div>
                           </div>
                         </div>
@@ -176,7 +215,11 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="block">
+                                    <div><label class="fr_lbltexto2" for="efectivo"><input type="radio" name="pago" id="efectivo" value="efectivo"> Efectivo  </label></div>
+                                    <div><label class="fr_lbltexto2" for="mepago"><input type="radio" name="pago" id="mepago" value="mpago">Mercado Pago  </label></div>   
+                                    <div><label class="fr_lbltexto2" for="bitcoin"><input type="radio" name="pago" id="bitcoin" value="bitcoin"> Bitcoin  </label></div>             
+                            </div>
                               </div>
                             </div>
                           </div>
@@ -188,7 +231,7 @@
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <strong>ACA VA EL DETALLE NO EDITABLE DE TODA LA COMPRA</strong>
                               </div>
                             </div>
                           </div>
