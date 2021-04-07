@@ -1,28 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+  	<head>
+	    <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/styles.css">
+	    <meta name="description" content="">
+	    <meta name="author" content="WeByte - Grupo 4">
+	    <title>We Byte</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">    <link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/c877c0219a.js" crossorigin="anonymous"></script>
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">    
+        <link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="js/bootstrap.js">
-        <link href="carousel.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
-        <title>We Byte</title>
-    </head>
+	    <!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Custom styles for this template -->
+	    <link href="/css/carousel.css" rel="stylesheet">
+
+	   
+    	<link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/index.css">
+ 	</head>
 
     <body>
         <header>
@@ -94,17 +96,59 @@
         </header>
         
         <main>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/images/test1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-item active">
+                    <img src="/images/webyte-ropa-deportiva-1.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/webyte-ropa-deportiva-2.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/webyte-ropa-deportiva-3.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="/images/test2.jpg" class="d-block w-100" alt="...">
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </main>
+
+        <section class="accesos">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#">
+                            <img src="/images/acceso-hombres.jpg" title="Acceso Hombres WeByte" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="/images/acceso-mujeres.jpg" title="Acceso Hombres WeByte" />
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <img src="/images/acceso-ninios.jpg" title="Acceso Hombres WeByte" />
+                        </a>
+                    </div>
                 </div>
             </div>
-        </main>
+        </section>
+
+        <section>
+            <div class="img-destacada parallax"></div>
+        </section>
         
         <footer>
             <section>
@@ -167,8 +211,6 @@
             </section>
         </footer>
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
+        <script src="/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

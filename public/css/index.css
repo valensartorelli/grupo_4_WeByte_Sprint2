@@ -1,0 +1,40 @@
+.visually-hidden{
+    display: none;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: transparent;
+    border: 0;
+}
+.carousel-control-prev, 
+.carousel-control-next{
+    width: 7%!important;
+}
+section.accesos{
+	margin-top: 45px;
+	margin-bottom: 95px;
+	
+}
+section.accesos a{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	display: block;
+}
+section.accesos a:hover{
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+section .img-destacada{
+	background-image: url(../images/imagen-destacada.jpg);
+	height: 400px;
+    position: relative;
+    background-color: #fff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    margin-bottom: 75px;
+}
