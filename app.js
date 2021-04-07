@@ -36,6 +36,10 @@ app.get('/plantilla', (req, res) =>
     res.sendFile(path.join(__dirname, './views/plantilla.html'))
 );
 
+app.get('/entrega', (req, res) =>
+    res.sendFile(path.join(__dirname, './views/entrega.html'))
+);
+
 
 app.listen(puerto || 3000, function() {
     console.log("Servidor corriendo en el puerto 3000");

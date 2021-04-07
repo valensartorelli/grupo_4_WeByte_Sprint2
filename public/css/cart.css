@@ -78,6 +78,7 @@ section.resumen-ayuda{
 
 section.resumen-ayuda button{
     width: 90%;
+    text-decoration: none;
     background-color: black;
     color: cornsilk;
     -webkit-transition: all 0.5s ease;
@@ -94,13 +95,15 @@ section.resumen-ayuda button:hover {
 
 div.Resumen{
     width:100%;
-    height: 100px;
 }
 
 div.ayuda{
     text-align: center;
     width:100%;
-    height: 20px;
+}
+
+div.pd_prod-rigt3 h2{
+    text-align: center;
 }
 
 div.resumen-pedido{
@@ -120,6 +123,10 @@ p.Prod{
 
 p.Prec{
     text-align: right;
+}
+p.Env{
+    text-align: right;
+    text-decoration: line-through;
 }
 
 .codigo-prom{
