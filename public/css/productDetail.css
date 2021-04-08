@@ -207,6 +207,7 @@ width: auto;
 #pd_newsletter .d-flex{
   flex-direction: column;
 }
+.novedades h2{font-size: 35px;}
 
 /* XS -- Celulares */
 @media screen and (min-width: 0px) {
@@ -243,7 +244,8 @@ width: auto;
     #pd_listado-products{margin-bottom: 40px}
     #pd_listado-products article{margin-bottom: 25px}
     .pd_prod-rigt3{border-top: none;}
-
+    #pd_newsletter .d-flex {flex-direction: row;}
+    .novedades h2{font-size: 53px;}
 }
 
 /* LG -- Computadoras */
@@ -260,4 +262,6 @@ width: auto;
     #pd_listado-products article a{-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
     #pd_listado-products article:hover a{color: #e4ff49;}
     .pd_precios{font-size: 24px}
+    #pd_newsletter .d-flex {flex-direction: row;}
+    .novedades h2{font-size: 53px;}
 }
