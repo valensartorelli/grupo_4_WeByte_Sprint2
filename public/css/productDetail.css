@@ -235,7 +235,10 @@ width: auto;
     #pd_main-producto{ margin: auto;}
     .pd_producto-img{display: flex; align-items:flex-start; justify-content: space-around; text-align: left; width: 100%;}
     .pd_prod-left, .pd_prod-rigt{flex: 1 1 50%; }
-    .pd_prod-rigt{font-size: 0.75em; padding: 15px 35px 15px 20px} 
+    .pd_prod-rigt{font-size: 0.75em; padding: 0px 0px 15px 20px} 
+    .pd_prod-rigt h1{font-size: 26px;line-height: 1.2} 
+    .pd_prod-rigt p{font-size: 12px;} 
+    .pd_prod-rigt .pd_prod-precio{font-size: 16px;} 
     .pd_categoria{font-size: 12px;}
     .pd_tit-categoria{font-size: 38px;margin-bottom: 10px}
     .pd_descripciones{font-size: 16px;line-height: 1.2;text-transform: none;color: #fff;font-weight: 700;margin: 0;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;padding: 5px 0;}
