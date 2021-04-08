@@ -114,7 +114,6 @@ display: inline-flex;
 justify-content: flex-start;
 line-height: 50px;
 min-height: 50px;
-padding: 0 21px;
 text-align: left;
 text-decoration: none;
 text-transform: uppercase;
@@ -137,7 +136,7 @@ width: auto;
     background-repeat: no-repeat;
     background-position: right;
 }
-.pd_gl-cta__content a {color: #fff; text-decoration: none;}
+.pd_gl-cta__content a {color: #fff; text-decoration: none;display: block;padding: 0 0 0 21px;}
 .pd_gl-cta__content a:hover {color: #e5fe4a; text-decoration: none;}
 
 .pd_gl-cta--primary:hover {color: #e5fe4a;}
@@ -148,7 +147,7 @@ width: auto;
 #pd_promo article{flex: 1 1 auto;}
 .pd_img{width: 95%; padding-bottom: 8px;}
 .pd_main-article{display: block;}
-.pd_categoria{font-size: 10px; text-transform:uppercase; line-height: 8px; font-family: 'Roboto Condensed', sans-serif; color: #666;}
+.pd_categoria{font-size: 14px;line-height: 1;text-transform: uppercase;color: #000;margin: 0}
 .pd_descripciones{ font-weight: bold;}
 .pd_descripciones a{text-decoration: none;  }
 .pd_descripciones a:hover{text-decoration: none; color: black;  }
@@ -157,8 +156,13 @@ width: auto;
 
 /* css producto */
 #pd_listado-products{ padding: 0px 10px;}
-#pd_listado-products article{width: 100%;}
-.pd_img-list{width: 100%; padding-bottom: 8px;}
+#pd_listado-products .col{ margin-bottom: 40px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+#pd_listado-products .col a{ display: block;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+#pd_listado-products .col a img{-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+#pd_listado-products .col:hover a img{box-shadow: 0px 0px 10px rgb(100 100 100);}
+#pd_listado-products .col:hover .pd_descripciones a{color: #e4ff49}
+
+.pd_img-list{width: 100%; margin-bottom: 8px;}
 /* fin css producto */
 
 
@@ -176,8 +180,8 @@ width: auto;
 .pd_label{display: block; font-weight: 700; font-size: 1.25em; font-family: 'Roboto Condensed', sans-serif; width: 100%;}
 
 .link-ruta{display: block; width: 100%;}
-.pd_tit-categoria{display: block; width: 100%; font-family: 'Roboto Condensed', sans-serif; font-size: 1.5em; text-transform: uppercase; padding: 0px 10px;}
-.link-ruta ul {list-style: none; display: flex; font-size: 10px; padding: 5px 10px; white-space: nowrap; text-align: left;  }
+.pd_tit-categoria{display: block; font-family: 'Roboto Condensed', sans-serif; text-transform: none; padding: 0px 0px;font-size: 53px;font-weight: 700;color: #000}
+.link-ruta ul {list-style: none; display: flex; font-size: 10px; padding: 20px 0px; white-space: nowrap; text-align: left;  }
 .link-ruta ul li {padding: 0px 2px;}
 .link-ruta ul a{text-decoration: none; color: #222222; display: inline-block; }
 
@@ -217,11 +221,10 @@ width: auto;
     .pd_producto-img{display: flex; align-items:flex-start; justify-content: space-around; text-align: left; width: 100%;}
     .pd_prod-left, .pd_prod-rigt{flex: 1 1 50%; }
     .pd_prod-rigt{font-size: 0.75em; padding: 15px 35px 15px 20px} 
-    .pd_descripciones{ font-size: 1.2em; line-height: 18px;}
-    .pd_precios{font-size: 1em;}
+    .pd_descripciones{font-size: 20px;line-height: 1.2;text-transform: none;color: #fff;font-weight: 700;margin: 0;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+    .pd_precios{font-size: 24px;line-height: 1.2;text-transform: none;color: #000;font-weight: 400;}
     .pd_lista-products{display: flex; flex-direction:row; justify-content: space-between; flex-wrap: wrap; width: 100%;}
-    #pd_listado-products article{ width: 33%;}
-    .pd_img-list{width: 95%;}
+    
     .pd_prod-rigt3{border-top: none;}
 
 }
@@ -233,6 +236,5 @@ width: auto;
     .pd_icon-service {width: 25%; }
     .pd_newsletter_cont{display: flex; align-items: center; justify-content: space-around; }
     .pd_text-news{font-size: 2em;}
-    #pd_listado-products article{width: 20%;}
 
 }

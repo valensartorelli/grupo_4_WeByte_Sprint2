@@ -23,7 +23,7 @@
 
 	   
     	<link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/productDetail.css">
+        <link rel="stylesheet" href="/css/index.css">
  	</head>
 
     <body>
@@ -96,68 +96,40 @@
         </header>
         
         <main id="pd_main-container">
-            <section>
-                <div class="container link-ruta">
-                    <nav>
-                        <ul>
-                            <li>></li>
-                            <li><a href="/"><strong>Atras</strong></a></li>
-                            <li>/</li>
-                            <li><a href="/producto">Hombre</a></li>
-                            <li>/</li>
-                            <li><a href="/detalleProducto">Indumentaria</a></li>   
-                        </ul>
-                    </nav>
+            <section id="pd_main-producto">
+               <div class="link-ruta">
+                    <nav><ul>
+                        <li>></li>
+                        <li><a href="/"><strong>Atras</strong></a></li>
+                        <li>/</li>
+                        <li><a href="/producto">Hombre</a></li>
+                        <li>/</li>
+                        <li><a href="/detalleProducto">Indumentaria</a></li>   
+                    </ul>
+                </nav>
                 </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="pd_tit-categoria">Indumentaria para Hombre</div>
-                    <div class="pd_producto-img">
-                        <div class="pd_prod-left"><img src="/images/detalle-producto1.jpg" alt="Remeras Hombre"></div>
-                        <div class="pd_prod-rigt">
-                            <h1>Remera Basica de Algodon</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quos culpa veniam assumenda ipsa porro.Autem quos culpa veniam assumenda ipsa porro.</p>
-                            <p class="pd_prod-precio">$1645</p>
-                            <label for="color" class="pd_label">Elegir Color</label>
-                            <select name="color" id="color" placeholder="Seleccione un Color">
-                                <option value="Negro">Negro</option>
-                                <option value="Blanco">Blanco</option>
-                                <option value="Rojo">Rojo</option>
-                                <option value="Azul">Azul</option>
-                            </select>
-                            <br><br><br>
-                            <label for="color" class="pd_label">Elegir Talle</label>
-                            <div class="radio-talles">
-                                <input type="radio" name="talle" id="S">
-                                <label for="S" class="label-talle">S</label>
-                                <input type="radio" name="talle" id="M">
-                                <label for="M" class="label-talle">M</label>
-                                <input type="radio" name="talle" id="L">
-                                <label for="L" class="label-talle">L</label>
-                                <input type="radio" name="talle" id="XL">
-                                <label for="XL" class="label-talle">XL</label>
-                            </div>
-                            <div class="guias">
-                                <div class="guia-left">
-                                    <a href="#">
-                                        <i class="pe-7s-bookmarks"></i> 
-                                        Guia de talles
-                                    </a>
-                                </div>
-                                <div class="guia-right">
-                                    <a href="#">
-                                        <i class="pe-7s-box1"></i> 
-                                        Envios y cambios
-                                    </a>
-                                </div>
-                            </div>
-                            <button type="button" class="pd_gl-cta pd_gl-cta--primary">
-                                <span class="pd_gl-cta__content">
-                                    <a href="/carrito">Agregar al Carrito</a>
-                                </span>
-                            </button>
+                <div class="pd_tit-categoria">Indumentaria para Hombre</div>
+                <div class="pd_producto-img">
+                    <div class="pd_prod-left"><img src="/images/detalle-producto1.jpg" alt="Remeras Hombre"></div>
+                    <div class="pd_prod-rigt">
+                        <h1>Remera Basica de Algodon</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quos culpa veniam assumenda ipsa porro.Autem quos culpa veniam assumenda ipsa porro.</p>
+                        <p class="pd_prod-precio">$1645</p>
+                        <label for="color" class="pd_label">Elegir Color</label>
+                        <select name="color" id="color" placeholder="Seleccione un Color"><option value="Negro">Negro</option><option value="Blanco">Blanco</option><option value="Rojo">Rojo</option><option value="Azul">Azul</option></select>
+                        <br><br><br><label for="color" class="pd_label">Elegir Talle</label>
+                        <div class="radio-talles">
+                            <input type="radio" name="talle" id="S">
+                            <label for="S" class="label-talle">S</label>
+                            <input type="radio" name="talle" id="M">
+                            <label for="M" class="label-talle">M</label>
+                            <input type="radio" name="talle" id="L">
+                            <label for="L" class="label-talle">L</label>
+                            <input type="radio" name="talle" id="XL">
+                            <label for="XL" class="label-talle">XL</label>
                         </div>
+                        <div class="guias"><div class="guia-left"><a href="#"><i class="pe-7s-bookmarks"></i> Guia de talles</a></div><div class="guia-right"><a href="#"><i class="pe-7s-box1"></i> Envios y cambios</a></div></div>
+                    <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="/carrito">Agregar al Carrito</a></span></button>
                     </div>
                 </div>
             </section>
