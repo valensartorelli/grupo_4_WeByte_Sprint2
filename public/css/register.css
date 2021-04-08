@@ -36,6 +36,7 @@ input:focus{ outline: none;}
         width: 98%;
         margin: 0px 0px 5px 0px;
         padding: 0px 10px;
+        height: 35px;
     }
     .fr_checkbox {
         display: block;
@@ -89,7 +90,9 @@ input:focus{ outline: none;}
     .doble-boton {display: flex; justify-content: space-between; width: 98%;}
     .boton-left, .boton-rigt{flex: 1 1 50%; align-items: center;}
     
-
+    .register div.pd_prod-rigt3 h2 {
+        text-align: left;
+    }
 /* entrega */
 
 div.formEnvios{
@@ -129,7 +132,18 @@ div.fr_radio img{
 @media (min-width: 768px) {
   .fr_registro-left, .fr_registro-rigt{flex: 1 1 100%; align-items: center;}
 }
+@media (max-width: 991px) {
+  .register .pd_prod-rigt3 {
+      margin: 35px 0 35px 25px;
+  }
+}
 
+@media (max-width: 767px) {
+  .register .pd_prod-rigt3 {
+      margin: 35px 0 35px 0px;
+      padding-top: 10px;
+  }
+}
 /* LG -- Computadoras */
 @media (min-width: 1200px) {
   .fr_registro {display: flex; justify-content: space-between; width: 98%;}
