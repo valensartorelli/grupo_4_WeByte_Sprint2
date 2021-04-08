@@ -180,3 +180,48 @@ div.Opciones img{
         height: auto;
     }
 }
+@media (max-width: 991px) {
+    .agrupar-carrito{
+        flex-direction: column;
+    }
+    section.carro{
+        max-width: 100%;
+    }
+    section.resumen-ayuda button{
+        display: none;
+    }
+    section.resumen-ayuda{
+        max-width: 80%;
+        margin-top: 35px;
+    }
+    div.resumen-pedido{
+        width: 100%
+    }
+    div.resumen-pedido h3{
+        display: block;
+    }
+    div.resumen-pedido p{
+        width: 100%;
+    }
+    div.resumen-pedido p.Prod{
+        margin-bottom: 0;
+    }
+    div.resumen-pedido p.Prec{
+        margin-bottom: 25px;
+        font-weight: 700;
+    }
+    div.ayuda,
+    div.Opciones{
+        margin-top: 35px;
+        text-align: left;
+    }
+    ul.enlaces-ayuda,
+    div.pd_prod-rigt3 h2{
+        text-align: left;
+        padding: 0;
+    }
+    .pd_prod-rigt3{
+        padding: 0;
+        margin: 35px 0;
+    }
+}
