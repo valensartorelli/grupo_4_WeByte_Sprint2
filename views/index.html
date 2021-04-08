@@ -22,8 +22,71 @@
 	    <link href="/css/carousel.css" rel="stylesheet">
 
 	   
+        <link rel="stylesheet" type="text/css" href="/css/slick.css">
+        <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
+
     	<link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/index.css">
+        <style type="text/css">
+            .slider {
+                width: 50%;
+                margin: 100px auto;
+            }
+
+            .slick-slide {
+              margin: 0px 20px;
+            }
+
+            .slick-slide img {
+              width: 100%;
+            }
+
+            .slick-prev:before,
+            .slick-next:before {
+              color: black;
+            }
+
+
+            .slick-slide {
+              transition: all ease-in-out .3s;
+              opacity: .2;
+            }
+            
+            .slick-active {
+              opacity: .5;
+            }
+
+            .slick-current {
+              opacity: 1;
+            }
+        </style>
+        <script type="text/javascript">
+            $('.center').slick({
+              centerMode: true,
+              centerPadding: '60px',
+              slidesToShow: 3,
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+        </script>
  	</head>
 
     <body>
@@ -102,15 +165,29 @@
                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner d-none d-md-block d-lg-none">
+                <!-- IMAGENES VERSION GRANDE -->
+                <div class="carousel-inner d-none d-md-block d-lg-block d-xl-block">
                   <div class="carousel-item active">
-                    <img src="/images/webyte-ropa-deportiva-1.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                    <img src="/images/webyte-ropa-deportiva-1.jpg" class="d-block w-100 img-responsive" alt="WeByte Ropa Deportiva">
                   </div>
                   <div class="carousel-item">
-                    <img src="/images/webyte-ropa-deportiva-2.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                    <img src="/images/webyte-ropa-deportiva-2.jpg" class="d-block w-100 img-responsive" alt="WeByte Ropa Deportiva">
                   </div>
                   <div class="carousel-item">
-                    <img src="/images/webyte-ropa-deportiva-3.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                    <img src="/images/webyte-ropa-deportiva-3.jpg" class="d-block w-100 img-responsive" alt="WeByte Ropa Deportiva">
+                  </div>
+                </div>
+
+                <!-- IMAGENES VERSION CHICA -->
+                <div class="carousel-inner d-block d-sm-block d-md-none">
+                  <div class="carousel-item active">
+                    <img src="/images/webyte-ropa-deportiva-1-mobile.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/webyte-ropa-deportiva-2-mobile.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/webyte-ropa-deportiva-3-mobile.jpg" class="d-block w-100" alt="WeByte Ropa Deportiva">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -127,17 +204,17 @@
         <section class="accesos">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-xs-12 col-md-4">
                         <a href="/producto">
                             <img src="/images/acceso-hombres.jpg" title="Acceso Hombres WeByte" />
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col-xs-12 col-md-4">
                         <a href="/producto">
                             <img src="/images/acceso-mujeres.jpg" title="Acceso Hombres WeByte" />
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col-xs-12 col-md-4">
                         <a href="/producto">
                             <img src="/images/acceso-ninios.jpg" title="Acceso Hombres WeByte" />
                         </a>
@@ -155,112 +232,109 @@
                 <h2>Novedades</h2>
             </div>
 
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide multi-item-carousel" data-bs-ride="carousel">
                 <div class="container">
                     <div class="col">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner row w-100 mx-auto">
                             <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/art1.jpg" class="d-block w-100" alt="Buzo canguro Star bicolor WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Hombre</div>
-                                                <h4>Buzo Canguro Star bicolor</h4>
-                                                <div class="precio">$3.500</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/art2.jpg" class="d-block w-100" alt="Pantalon Joggers con puño WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Hombre</div>
-                                                <h4>Pantalon Joggers con puño</h4>
-                                                <div class="precio">$3.800</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/art3.jpg" class="d-block w-100" alt="Zapatilla colegial con velcro WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Niño</div>
-                                                <h4>Zapatilla colegial con velcro</h4>
-                                                <div class="precio">$4.800</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/art4.jpg" class="d-block w-100" alt="Remera algodon negra WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Hombre</div>
-                                                <h4>Remera algodon negra</h4>
-                                                <div class="precio">$2.500</div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                <div class="novedad">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/art1.jpg" class="d-block w-100" alt="Buzo canguro Star bicolor WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Hombre</div>
+                                            <h4>Buzo Canguro Star bicolor</h4>
+                                            <div class="precio">$3.500</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="novedad d-none d-sm-block">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/art2.jpg" class="d-block w-100" alt="Pantalon Joggers con puño WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Hombre</div>
+                                            <h4>Pantalon Joggers con puño</h4>
+                                            <div class="precio">$3.800</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="novedad d-none d-sm-block d-md-block">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/art3.jpg" class="d-block w-100" alt="Zapatilla colegial con velcro WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Niño</div>
+                                            <h4>Zapatilla colegial con velcro</h4>
+                                            <div class="precio">$4.800</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="novedad d-none d-sm-block d-md-block">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/art4.jpg" class="d-block w-100" alt="Remera algodon negra WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Hombre</div>
+                                            <h4>Remera algodon negra</h4>
+                                            <div class="precio">$2.500</div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
+
                             <div class="carousel-item">
-                                <div class="row">
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/detalle-producto1.jpg" class="d-block w-100" alt="Remera algodon negra WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Hombre</div>
-                                                <h4>Remera algodon negra</h4>
-                                                <div class="precio">$3.500</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/detalle-producto2.jpg" class="d-block w-100" alt="Remera algodon roja WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Hombre</div>
-                                                <h4>Remera algodon roja</h4>
-                                                <div class="precio">$3.500</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/detalle-producto3.jpg" class="d-block w-100" alt="Remera algodon blanca WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Hombre</div>
-                                                <h4>Remera algodon blanca</h4>
-                                                <div class="precio">$3.500</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="novedad">
-                                        <a href="/detalleProducto">
-                                            <figure>
-                                                <img src="/images/detalle-producto4.jpg" class="d-block w-100" alt="Remera algodon azul WeByte">
-                                            </figure>
-                                            <div class="prod-info">
-                                                <div class="section">Hombre</div>
-                                                <h4>Remera algodon azul</h4>
-                                                <div class="precio">$3.500</div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                <div class="novedad">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/detalle-producto1.jpg" class="d-block w-100" alt="Remera algodon negra WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Hombre</div>
+                                            <h4>Remera algodon negra</h4>
+                                            <div class="precio">$3.500</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="novedad d-none d-sm-block">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/detalle-producto2.jpg" class="d-block w-100" alt="Remera algodon roja WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Hombre</div>
+                                            <h4>Remera algodon roja</h4>
+                                            <div class="precio">$3.500</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="novedad d-none d-sm-block d-md-block">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/detalle-producto3.jpg" class="d-block w-100" alt="Remera algodon blanca WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Hombre</div>
+                                            <h4>Remera algodon blanca</h4>
+                                            <div class="precio">$3.500</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="novedad d-none d-sm-block d-md-block">
+                                    <a href="/detalleProducto">
+                                        <figure>
+                                            <img src="/images/detalle-producto4.jpg" class="d-block w-100" alt="Remera algodon azul WeByte" class="img-fluid">
+                                        </figure>
+                                        <div class="prod-info">
+                                            <div class="section">Hombre</div>
+                                            <h4>Remera algodon azul</h4>
+                                            <div class="precio">$3.500</div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -275,6 +349,22 @@
                     </button>
                 </div>
             </div>
+            <script type="text/javascript">
+                $('.multi-item-carousel').on('slide.bs.carousel', function (e) {
+                  let $e = $(e.relatedTarget),
+                      itemsPerSlide = 3,
+                      totalItems = $('.carousel-item', this).length,
+                      $itemsContainer = $('.carousel-inner', this),
+                      it = itemsPerSlide - (totalItems - $e.index());
+                  if (it > 0) {
+                    for (var i = 0; i < it; i++) {
+                      $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
+                        // append slides to the end/beginning
+                        appendTo($itemsContainer);
+                    }
+                  }
+                });
+            </script>
         </section>
         
         <footer>
@@ -339,5 +429,6 @@
         </footer>
 
         <script src="/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
