@@ -79,8 +79,7 @@ input:focus{ outline: none;}
 
     .p10 {padding: 10px;}
     
-    .fr_registro {display: flex; justify-content: space-between; width: 98%;}
-    .fr_registro-left, .fr_registro-rigt{flex: 1 1 50%; align-items: center;}
+ 
 
     .fr_registro button {bottom: 50px; left: 0px; background-color: #000; color: #ebebeb; justify-content: center;}
 
@@ -123,6 +122,19 @@ div.fr_radio img{
   width: 5%;
 }
 
+@media screen and (min-width: 0px) {
+  .pd_prod-rigt3 .pd_tit-categoria {font-size: 26px;}
+  .fr_registro-rigt{display: block;}
+}
+@media (min-width: 768px) {
+  .fr_registro-left, .fr_registro-rigt{flex: 1 1 100%; align-items: center;}
+}
+
+/* LG -- Computadoras */
+@media (min-width: 1200px) {
+  .fr_registro {display: flex; justify-content: space-between; width: 98%;}
+  .fr_registro-left, .fr_registro-rigt{flex: 1 1 50%; align-items: center;}
+}
 
     /*
     .form_register {width: 350px; height: 570px; margin: 0 auto; border: 1px solid black; background-color: #ebebeb; border-radius: 1em;}
