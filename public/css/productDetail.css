@@ -125,6 +125,7 @@ width: auto;
     border-color: #fff;
     color: #fff;
     height: 50px;
+    padding:0 21px;
 }
 .pd_gl-cta--primary:focus{ outline: none;}
 .pd_gl-cta__content {
@@ -136,10 +137,10 @@ width: auto;
     background-repeat: no-repeat;
     background-position: right;
 }
-.pd_gl-cta__content a {color: #fff; text-decoration: none;display: block;padding: 0 0 0 21px;}
-.pd_gl-cta__content a:hover {color: #e5fe4a; text-decoration: none;}
-
-.pd_gl-cta--primary:hover {color: #e5fe4a;}
+.pd_gl-cta__content a {color: #fff; text-decoration: none;display: block;}
+.pd_gl-cta__content a:hover {text-decoration: none;}
+.pd_gl-cta--primary a{-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+.pd_gl-cta--primary:hover a{color: #e5fe4a;}
 
 .pd_products{display: flex; justify-content: space-between; align-items: center;}
 
@@ -167,7 +168,7 @@ width: auto;
 
 
 #pd_detalle h2{font-family: 'Roboto Condensed', sans-serif; font-size: 1.5em;} 
-#pd_detalle p{font-size: 0.75em;} 
+#pd_detalle p{font-size: 1em;} 
 
 #pd_main-producto h1{font-family: 'Roboto Condensed', sans-serif; font-size: 2.5em;}
 .pd_producto-img{color: #000; }
@@ -194,6 +195,13 @@ width: auto;
 .guias{ display: inline-flex; justify-content: flex-start;  width: 100%; padding: 15px 35px 20px 0px; font-family: 'Roboto Condensed', sans-serif;}
 .guia-left a, .guia-right a{color: #333; margin-right: 35px; font-size: 14px; }
 .guia-left a:hover, .guia-right a:hover{color: #333;}
+
+.productDetails .novedades{
+  margin-top: 40px;
+}
+.productDetails #carouselExampleInterval{
+  margin-bottom: 20px;
+}
 
 /* XS -- Celulares */
 @media screen and (min-width: 0px) {

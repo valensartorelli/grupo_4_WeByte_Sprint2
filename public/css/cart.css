@@ -1,20 +1,21 @@
 h2.carrito{
     padding-top: 25px;
-    padding-left: 25px;
+    padding-left: 0px;
     padding-bottom: 5px;
 }
 p.carrito{
-    padding-left: 25px;
+    padding-left: 0px;
     padding-bottom: 25px;
 }
 
 .agrupar-carrito {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 10px;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 section.carro{
@@ -145,6 +146,13 @@ div.Opciones{
 
 div.Opciones img{
     max-width: 22%;
+}
+
+.agrupar-carrito .pd_prod-rigt h1{
+    font-size: 20px;
+}
+.agrupar-carrito .pd_prod-rigt .pd_prod-precio{
+    font-size: 24px;
 }
 
 @media (max-width: 360px) {

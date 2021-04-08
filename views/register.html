@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+	    <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/productDetail.css">
-        <link rel="stylesheet" href="/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-        <link rel="stylesheet" href="/css/register.css">
+	    <meta name="description" content="">
+	    <meta name="author" content="WeByte - Grupo 4">
+	    <title>We Byte</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">    <link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/c877c0219a.js" crossorigin="anonymous"></script>
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">    
+        <link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="js/bootstrap.js">
-        <link href="carousel.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
 
-        <title>We Byte</title>
-    </head>
+	    <!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Custom styles for this template -->
+	    <link href="/css/carousel.css" rel="stylesheet">
+
+	   
+    	<link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="/css/productDetail.css">
+        <link rel="stylesheet" href="/css/cart.css">
+        <link rel="stylesheet" href="/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="/css/register.css">
+ 	</head>
 
     <body>
         <header>
@@ -98,66 +101,73 @@
         
         <main id="pd_main-container">
             <section id="pd_main-producto">
-                <div class="pd_tit-categoria p40">Registrate</div>
-                <div class="fr_text">Ya estas registrado? <a href="/login">Inicia Sesión</a></div>
-                <div class="pd_producto-img">
-                    <div class="pd_prod-left p10">            
-                        <form action="" method="POST">
-                                <div class="fr_nombre">
-                                    <label class="fr_lbltexto"> Tu Nombre </label>
-                                    <input type="text" name="nombreApellido" id="nombreApellido" required placeholder="* Nombre y Apellido">
-                                </div>
-                                    <div class="fr_fechaNac">
-                                        <label class="fr_lbltexto"> Fecha de nacimiento </label>
-                                        <input type="date" name="fechaNac" id="fechaNac" required>
+                <div class="container">
+                    <div class="pd_tit-categoria p40">Registrate</div>
+                    <div class="fr_text">Ya estas registrado? <a href="/login">Inicia Sesión</a></div>
+                    <div class="pd_producto-img">
+                        <div class="pd_prod-left">            
+                            <form action="" method="POST">
+                                    <div class="fr_nombre">
+                                        <label class="fr_lbltexto"> Tu Nombre </label>
+                                        <input type="text" name="nombreApellido" id="nombreApellido" required placeholder="* Nombre y Apellido">
                                     </div>
-                                    <div class="fr_email">
-                                        <label class="fr_lbltexto"> Datos de Acceso </label>
-                                        <input type="email" name="emailUsuario" id="emailUsuario" required placeholder="* Correo Electronico">
+                                        <div class="fr_fechaNac">
+                                            <label class="fr_lbltexto"> Fecha de nacimiento </label>
+                                            <input type="date" name="fechaNac" id="fechaNac" required>
+                                        </div>
+                                        <div class="fr_email">
+                                            <label class="fr_lbltexto"> Datos de Acceso </label>
+                                            <input type="email" name="emailUsuario" id="emailUsuario" required placeholder="* Correo Electronico">
+                                        </div>
+                                    <div class="fr_password1">
+                                            <input type="password" name="passwordUsuario1" id="passwordUsuario1" required placeholder="* Contraseña">
+                                            <label class="fr_lbltexto-xs"> Debes usar como minimo 8 caracteres, incluyendo un numero, mayusculas y minusculas.</label>
                                     </div>
-                                <div class="fr_password1">
-                                        <input type="password" name="passwordUsuario1" id="passwordUsuario1" required placeholder="* Contraseña">
-                                        <label class="fr_lbltexto-xs"> Debes usar como minimo 8 caracteres, incluyendo un numero, mayusculas y minusculas.</label>
-                                </div>
-                                <div class="fr_password2">
-                                        <input type="password" name="passwordUsuario2" id="passwordUsuario2" required placeholder="* Repetir Contraseña">
-                                </div>
-                                 <!--</div>-->
-                                 <br>
-                        <div class="fr_checkbox">
-                            <input type="checkbox" name="terminos" id="a"> &nbsp;
-                              He leído y acepto los Términos y condiciones de WeByte y la Política de privacidad
-                        </div>
-                        <div class="fr_checkbox">
-                            <input type="checkbox" name="newsletter" id="b"> &nbsp; Quiero recibir newsletters y ofertas
-                    </div>
-                        <br>
-                        <div class="fr_registro">
-                            <div class="fr_registro-left">
-                                <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="/carrito">Registrarme</a></span></button>
+                                    <div class="fr_password2">
+                                            <input type="password" name="passwordUsuario2" id="passwordUsuario2" required placeholder="* Repetir Contraseña">
+                                    </div>
+                                     <!--</div>-->
+                                     <br>
+                            <div class="fr_checkbox">
+                                <input type="checkbox" name="terminos" id="a"> &nbsp;
+                                  He leído y acepto los Términos y condiciones de WeByte y la Política de privacidad
                             </div>
-                            <div class="fr_registro-right">
-                            <div class="google-logo"><a href="/carrito">Google</a></div>
-                            <div class="facebook-logo"><a href="/carrito">Facebook</a></div>
+                            <div class="fr_checkbox">
+                                <input type="checkbox" name="newsletter" id="b"> &nbsp; Quiero recibir newsletters y ofertas
                         </div>
-                    </div>
-                    </form></div>
-                    <div class="pd_prod-rigt3">
-                        <h2>UNITE AL WEBYTE. <br>OBTENÉ BENEFICIOS</h2>
-                            <p class="fr-destacado"> ✓ Disfrutá inmediatamente de todos los beneficios y descuentos</p>
-                            <p class="fr-destacado"> ✓ Accedé a la venta de productos de edición limitada</p>
-                            <p class="fr-destacado"> ✓ Recibí nuestras mejores ofertas y promociones</p>
-                            <p class="fr-destacado"> ✓ Es hora de desbloquear lo mejor de WEBYTE.</p>
-                    
+                            <br>
+                            <div class="fr_registro">
+                                <div class="fr_registro-left">
+                                    <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content"><a href="/carrito">Registrarme</a></span></button>
+                                </div>
+                                <div class="fr_registro-right">
+                                <div class="google-logo"><a href="/carrito">Google</a></div>
+                                <div class="facebook-logo"><a href="/carrito">Facebook</a></div>
+                            </div>
+                        </div>
+                        </form></div>
+                        <div class="pd_prod-rigt3">
+                            <h2>UNITE AL WEBYTE. <br>OBTENÉ BENEFICIOS</h2>
+                                <p class="fr-destacado"> ✓ Disfrutá inmediatamente de todos los beneficios y descuentos</p>
+                                <p class="fr-destacado"> ✓ Accedé a la venta de productos de edición limitada</p>
+                                <p class="fr-destacado"> ✓ Recibí nuestras mejores ofertas y promociones</p>
+                                <p class="fr-destacado"> ✓ Es hora de desbloquear lo mejor de WEBYTE.</p>
+                        
+                        </div>
                     </div>
                 </div>
             </section>
             <section id="pd_detalle"></section>
             <div id="pd_newsletter">
-                <div class="pd_newsletter_cont">
-               <div class="pd_text-news"><h6>Suscribite</h6><p clas>Recibí nuestras novedades y Obtené descuentos!!</p></div>
-               <button type="button" class="pd_gl-cta pd_gl-cta--primary"><span class="pd_gl-cta__content">Suscribirse</span></button>
-            </div>
+                <div class="container d-flex">
+                    <div class="pd_text-news">
+                        <h6>Suscribite</h6>
+                        <p clas>Recibí nuestras novedades y Obtené descuentos!!</p>
+                    </div>
+                    <button type="button" class="pd_gl-cta pd_gl-cta--primary">
+                        <span class="pd_gl-cta__content">Suscribirse</span>
+                    </button>
+                </div>
             </div>
             <div id="footer-pre">
             <div class="pd_icon-service">
