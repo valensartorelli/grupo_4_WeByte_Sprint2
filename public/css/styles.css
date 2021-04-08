@@ -285,7 +285,7 @@ footer p {
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-right: 0px;
 }
 
@@ -523,7 +523,7 @@ footer p {
         color: #222222;
         display: inline-block;
         padding: 0 8px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .main-navbar-bottom ul li:first-of-type a {
         padding-left: 0;
