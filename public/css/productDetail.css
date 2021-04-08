@@ -181,7 +181,7 @@ width: auto;
 .pd_label{display: block; font-weight: 700; font-size: 1.25em; font-family: 'Roboto Condensed', sans-serif; width: 100%;}
 
 .link-ruta{display: block; width: 100%;}
-.pd_tit-categoria{display: block; font-family: 'Roboto Condensed', sans-serif; text-transform: none; padding: 0px 0px; font-size: 45px; font-weight: 700; color: #000; text-align: left;}
+.pd_tit-categoria{display: block; font-family: 'Roboto Condensed', sans-serif; text-transform: none; padding: 0px 0px; font-size: 40px; font-weight: 700; color: #000; text-align: left;line-height: 1;margin-bottom: 20px}
 .link-ruta ul {list-style: none; display: flex; font-size: 10px; padding: 20px 0px; white-space: nowrap; text-align: left;  }
 .link-ruta ul li {padding: 0px 2px;}
 .link-ruta ul a{text-decoration: none; color: #222222; display: inline-block; }
@@ -204,13 +204,16 @@ width: auto;
 .productDetails #carouselExampleInterval{
   margin-bottom: 20px;
 }
+#pd_newsletter .d-flex{
+  flex-direction: column;
+}
 
 /* XS -- Celulares */
 @media screen and (min-width: 0px) {
     #footer-pre{flex-direction:column; font-size: 1em;  }
     .pd_text-news{font-size: 1.5em;}
-    .pd_descripciones{ font-size: 1em;}
-    .pd_precios{font-size: 1em; }
+    .pd_descripciones{ font-size: 1.5em;margin-bottom: 0}
+    .pd_precios{font-size: 1.7em; }
     .pd_prod-rigt3{border-top: 1px solid #333; margin-top: 15px; text-align: left;}
     .fr_registro-left, .fr_registro-rigt{flex: 1 1 100%; align-items: center;}
   }
@@ -232,10 +235,13 @@ width: auto;
     .pd_producto-img{display: flex; align-items:flex-start; justify-content: space-around; text-align: left; width: 100%;}
     .pd_prod-left, .pd_prod-rigt{flex: 1 1 50%; }
     .pd_prod-rigt{font-size: 0.75em; padding: 15px 35px 15px 20px} 
-    .pd_descripciones{font-size: 20px;line-height: 1.2;text-transform: none;color: #fff;font-weight: 700;margin: 0;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
-    .pd_precios{font-size: 24px;line-height: 1.2;text-transform: none;color: #000;font-weight: 400;}
+    .pd_categoria{font-size: 12px;}
+    .pd_tit-categoria{font-size: 38px;margin-bottom: 10px}
+    .pd_descripciones{font-size: 16px;line-height: 1.2;text-transform: none;color: #fff;font-weight: 700;margin: 0;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;padding: 5px 0;}
+    .pd_precios{font-size: 20px;line-height: 1.2;text-transform: none;color: #000;font-weight: 400;}
     .pd_lista-products{display: flex; flex-direction:row; justify-content: space-between; flex-wrap: wrap; width: 100%;}
-    
+    #pd_listado-products{margin-bottom: 40px}
+    #pd_listado-products article{margin-bottom: 25px}
     .pd_prod-rigt3{border-top: none;}
 
 }
@@ -247,5 +253,11 @@ width: auto;
     .pd_icon-service {width: 25%; }
     .pd_newsletter_cont{display: flex; align-items: center; justify-content: space-around; }
     .pd_text-news{font-size: 2em;}
-
+    .pd_tit-categoria{font-size: 53px;}
+    .prod-info .section {font-size: 14px;}
+    .pd_descripciones{font-size: 20px;padding: 0}
+    #pd_listado-products article{margin-bottom: 35px}
+    #pd_listado-products article a{-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-ms-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+    #pd_listado-products article:hover a{color: #e4ff49;}
+    .pd_precios{font-size: 24px}
 }
