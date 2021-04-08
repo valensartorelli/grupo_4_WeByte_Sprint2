@@ -62,6 +62,7 @@ article.producto-en-carro img{
     display: none;
 }
 
+
 div.guias{
     display: none;
 }
@@ -75,6 +76,7 @@ section.resumen-ayuda{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items:flex-start;
 }
 
 section.resumen-ayuda button{
@@ -154,6 +156,9 @@ div.Opciones img{
 .agrupar-carrito .pd_prod-rigt .pd_prod-precio{
     font-size: 24px;
 }
+
+.right{display: flex; justify-content: end; width: 35%;} 
+.talle-on { background-color: #000; color: #e5fe4a; font-weight: bold;}
 
 @media (max-width: 360px) {
     section.carro{
